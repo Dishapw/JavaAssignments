@@ -4,13 +4,11 @@ interface Language {
   void getName(String name);
 }
 
-
 class ProgrammingLanguage implements Language {
   public void getName(String name) {
     System.out.println("Programming Language: " + name);
   }
 }
-
 
 class Main {
   public static void main(String[] args) {
@@ -19,11 +17,8 @@ class Main {
   }
 }
 
-
 Output:
 Programming Language: Java
-
-
 
 
 Q3.Write a program to show the use of functional interface in java?
@@ -42,11 +37,8 @@ class FunctionalInterfaceExample implements sayable{
     }  
 }  
 
-
 Output:
 Hello, How are u ?
-
-
 
 
 Q4.What is an interface in Java?
@@ -56,8 +48,6 @@ Q4.What is an interface in Java?
 * In interfaces,by default,all the methods are “public and abstract”.
 
 
-
-
 Q5.What is the use of interface in Java?
 → There are mainly three reasons to use interface. They are given below.
 * It is used to achieve abstraction.
@@ -65,23 +55,15 @@ Q5.What is the use of interface in Java?
 * It can be used to achieve loose coupling.
 
 
-
-
 Q6.What is the lambda expression of Java 8?
 → Lambda expression is a short block of code that accepts input as parameters and return the value.
 We can also say that ,lambda expression is a type of function without a name.
-
-
-Syntax for lambda expression:
-
-
+>> Syntax for lambda expression:
          (parameter-list) → {body}
 	Lambda expression is consisted of 3 components:
 1. Argument-list: it can be empty or non-empty as well.
 2. Arrow-token: it is used to link arguments-list and body of expression.
 3. Body: it contains expressions and statements for lambda expression.
-
-
 
 
 Q7.Can you pass lambda expressions to a method? When?
@@ -104,13 +86,9 @@ public class LambdaExpressionPassMethodTest {
 }
 
 
-
-
 Q8.What is the functional interface in Java 8?
 → A functional interface in Java 8 is an interface that can only have one abstract method. Functional interfaces are also referred to as SAM interfaces, or, Single Abstract Method interfaces. However, they can contain any number of default or static methods.
 The @FunctionalInterface annotation is used to create a new functional interface. 
-
-
 
 
 Q9.What is the benefit of lambda expressions in Java 8?
@@ -120,8 +98,6 @@ Q9.What is the benefit of lambda expressions in Java 8?
 * It encourages the use of functional programming.
 * It simplifies variable scope and encourages code reusability.
 * Lambdas allow you to use parallel processing.
-
-
 
 
 Q10.Is it mandatory for a lambda expression to have parameters?
