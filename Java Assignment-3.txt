@@ -3,7 +3,6 @@
 BankDetails.java
 import java.util.Scanner;
 
-
 class BankDetails {  
     private String accno;  
     private String name;  
@@ -48,7 +47,6 @@ class BankDetails {
         }  
     }  
 
-
     public boolean search(String ac_no) {  
         if (accno.equals(ac_no)) {  
             showAccount();  
@@ -57,7 +55,6 @@ class BankDetails {
         return (false);  
     }  
 }  
-
 
 BankingApp.java
 import java.util.Scanner;
@@ -140,7 +137,6 @@ public class BankingApp {
         }  
 }  
 
-
 Output:
 How many number of customers do you want to input? 2
 Enter Account No: 101
@@ -151,7 +147,6 @@ Enter Account No: 102
 Enter Account type: Current
 Enter Name: Jennie
 Enter Balance: 50000
-
 
  ***Banking System Application***
 1. Display all account details
@@ -170,7 +165,6 @@ Account no.: 102
 Account type: Current
 Balance: 50000
 
-
  ***Banking System Application***
 1. Display all account details
  2. Search by Account number
@@ -181,7 +175,6 @@ Enter your choice:
 2
 Enter account no. you want to search: 104
 Search failed! Account doesn't exist..!!
-
 
  ***Banking System Application***
 1. Display all account details
@@ -199,7 +192,6 @@ Balance: 50000
 Enter the amount you want to deposit:
 15000
 
-
  ***Banking System Application***
 1. Display all account details
  2. Search by Account number
@@ -213,7 +205,6 @@ Name of account holder: Jennie
 Account no.: 102
 Account type: Current
 Balance: 65000
-
 
  ***Banking System Application***
 1. Display all account details
@@ -232,7 +223,6 @@ Enter the amount you want to withdraw:
 5000
 Balance after withdrawal: 55000
 
-
  ***Banking System Application***
 1. Display all account details
  2. Search by Account number
@@ -244,8 +234,6 @@ Enter your choice:
 See you soon...
 
 
-
-
 Q2. Write a Program where you inherit method from parent class and show method Overridden Concept?
 → 
 public class Vehicle {  
@@ -253,7 +241,6 @@ public class Vehicle {
     System.out.println("Vehicle is running");
   }  
 }  
-
 
 class Car extends Vehicle{  
   void run(){
@@ -266,13 +253,8 @@ class Car extends Vehicle{
   }  
 }
 
-
 Output:
 Car is running safely
-
-
-
-
 
 
 Q3.Write a program to show run time polymorphism in java?
@@ -283,13 +265,11 @@ class Shape{
     }  
 }  
 
-
 class Rectangle extends Shape{  
     void draw(){
         System.out.println("drawing a rectangle...");
     }  
 }  
-
 
 class Circle extends Shape{  
     void draw(){
@@ -297,13 +277,11 @@ class Circle extends Shape{
     }  
 }  
 
-
 class Triangle extends Shape{  
     void draw(){
         System.out.println("drawing a triangle...");
     }  
 } 
-
 
 class TestPolymorphism2{  
 public static void main(String args[]){  
@@ -317,13 +295,10 @@ s.draw();
 }  
 }  
 
-
 Output:
 drawing a rectangle...
 drawing a circle...
 drawing a triangle…
-
-
 
 
 Q4.Write a program to show Compile time polymorphism in java?
@@ -346,12 +321,9 @@ class Addition {
     } 
 }
 
-
 Output:
 Sum of two numbers : 110
 Sum of three numbers : 127
-
-
 
 
 Q5. Achieve loose coupling in java by using OOPs  concept?
@@ -376,32 +348,22 @@ public class LooseCoupling {
    }
 }
 
-
 Output:
 kitten
-
-
 
 
 Q6. What is the benefit of encapsulation in java?
 → Benefits of Encapsulation:
 
-
 Data Hiding: it is a way of restricting the access of our data members by hiding the implementation details. The user will have no idea about the inner implementation of the class. It will not be visible to the user how the class is storing values in the variables. The user will only know that we are passing the values to a setter method and variables are getting initialized with that value.
 
-
 Increased Flexibility: Here, we can make the variables of the class as read-only or write-only depending on our requirement. In case you wish to make the variables as read-only then we have to omit the setter methods like setName(), setAge() etc. or if we wish to make the variables as write-only then we have to omit the get methods like getName(), getAge() etc. 
-
 
 Reusability: It also improves the re-usability and easy to change with new requirements.
 
 
-
-
 Q7.Is java a t 100% Object oriented Programming language? If no why ?
 → Java is not fully object oriented ,Because it supports primitive data types like int,float,double,which are not object oriented, and ofcourse is what opposite of OOP is.Thats why java is not 100% object oriented .
-
-
 
 
 Q8.What are the advantages of abstraction in java?
@@ -413,8 +375,6 @@ Q8.What are the advantages of abstraction in java?
 5. It improves the modularity of the application. 
 6.  Improves code reusability and maintainability.
 7. Provides a clear and simple interface to the user.
-
-
 
 
 Q9.What is an abstraction explained with an Example?
@@ -440,12 +400,9 @@ class Main{
 }  
 
 
-
-
 Q10.What is the final class in Java?
 → The final class is a class that is declared with the final keyword. We can restrict class inheritance by making use of the final class. Final classes cannot be extended or inherited. If we try to inherit a final class, then the compiler throws an error during compilation.
 The final keyword can be used with class method and variable.
-
 
 Syntax:
     final class className {
