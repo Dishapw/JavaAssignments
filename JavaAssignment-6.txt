@@ -6,8 +6,6 @@ Java collection framework includes the following:
 * Methods
 
 
-
-
 Q2. Differentiate between Collection and collections in the context of Java.
 →  Collection:
 * Collection is called interface in java.
@@ -26,8 +24,6 @@ Q2. Differentiate between Collection and collections in the context of Java.
                       public class Collections extends Object
 
 
-
-
 Q3. What are the advantages of the Collection framework?
 → Advantages of the collection framework are:
 * Reduces programming effort
@@ -36,8 +32,6 @@ Q3. What are the advantages of the Collection framework?
 * Reduces effort to learn and to use new APIs
 * Reduces effort to design new APIs
 * Fosters software reuse
-
-
 
 
 Q4.Explain the various interfaces used in the Collection framework.
@@ -49,8 +43,6 @@ Q4.Explain the various interfaces used in the Collection framework.
 * Map: The Map interface represents a mapping between unique keys and corresponding values. It does not extend the Collection interface but is an important part of the Java Collection framework.Notable implementations of Map include HashMap, TreeMap, and LinkedHashMap.
 
 
-
-
 Q5.Differentiate between List and Set in Java.
 →  List:
 * The List is an indexed sequence.
@@ -59,15 +51,12 @@ Q5.Differentiate between List and Set in Java.
 * Multiple null elements can be stored.
 * List implementations are ArrayList, LinkedList, Vector, Stack.
 
-
     Set:
 * The Set is an non-indexed sequence.
 * Set doesn’t allow duplicate elements.
 * Position access to elements is not allowed.
 * Null element can store only once.
 * Set implementations are HashSet, LinkedHashSet.
-
-
 
 
 Q6.What is the Differentiate between Iterator and ListIterator in Java.
@@ -80,7 +69,6 @@ Q6.What is the Differentiate between Iterator and ListIterator in Java.
 * Elements can’t be added, since it would throw ConcurrentModificationException.
 * Methods of the iterator are ‘next()’, ‘remove()’, ‘hasNext()’.
 
-
  ListIterator:
 * It helps traverse through a list only.
 * It can’t traverse through a map and a set.
@@ -89,8 +77,6 @@ Q6.What is the Differentiate between Iterator and ListIterator in Java.
 * Some of the methods of listiterator are ‘nextIndex()’, ‘previousIndex()’, ‘previous()’, ‘next()’.
 * The elements can be modified or replaced.
 * Elements can be added to a collection anytime.
-
-
 
 
 Q7.What is the Differentiate between Comparable and Comparator?
@@ -111,12 +97,8 @@ Q7.What is the Differentiate between Comparable and Comparator?
 * Comparator doesn't modify any class.
 
 
-
-
 Q8.What is collision in HashMap?
 → A collision, or more specifically, a hash code collision in a HashMap, is a situation where two or more key objects produce the same final hash value and hence point to the same bucket location or array index.
-
-
 
 
 Q9.Distinguish between a hashmap and a Treemap.
@@ -126,7 +108,6 @@ Q9.Distinguish between a hashmap and a Treemap.
 * The HashMap can contain one null key.
 * HashMap is faster than TreeMap.
 
-
 Treemap:
 * A TreeMap is a Map based collection class that is used for storing key and value pairs which maintains the ascending order of data elements.
 * The TreeMap maintains the ascending order.
@@ -134,11 +115,8 @@ Treemap:
 * TreeMap is slower than HashMap.
 
 
-
-
 Q10.Define LinkedHashMap in Java.
 → LinkedHashMap in Java is an implementation that combines HashTable and LinkedList implementation. It implements the Map interface. The key-value pairs of LinkedHashMap have a predictable order of iteration.
-
 
   Some of the main characteristics of LinkedHashMap are:
 * It contains key-based values.
