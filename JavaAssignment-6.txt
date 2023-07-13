@@ -1,0 +1,147 @@
+﻿Q1.What is Collection in Java?
+→ In Java, the collection is a framework that acts as an architecture for storing and manipulating a group of objects. Using Collections you can perform various tasks like searching, sorting, insertion, manipulation, deletion, etc. 
+Java collection framework includes the following:
+* Interfaces
+* Classes
+* Methods
+
+
+
+
+Q2. Differentiate between Collection and collections in the context of Java.
+→  Collection:
+* Collection is called interface in java.
+* Found in java.util.package.
+* Collection is used to represent a single unit with a group of individual objects. 
+* Since java 8, collection is an interface with static as well as abstract and default methods.
+* Declaration of Collection
+                        public interface Collection<E> extends Iterable<E>
+  
+ Collections:
+* Collections is called a utility class in java.
+* Found in java.util.package.
+* Collections is used to operate on collection with several utility methods.
+* Collections operate only with static methods.
+* Declaration of Collections:
+                      public class Collections extends Object
+
+
+
+
+Q3. What are the advantages of the Collection framework?
+→ Advantages of the collection framework are:
+* Reduces programming effort
+* Increases program speed and quality
+* Allows interoperability among unrelated APIs
+* Reduces effort to learn and to use new APIs
+* Reduces effort to design new APIs
+* Fosters software reuse
+
+
+
+
+Q4.Explain the various interfaces used in the Collection framework.
+→ Various interfaces used in the collection framework are as follows:
+* List: The List interface extends the Collection interface and represents an ordered collection of elements.Common implementations of List include ArrayList, LinkedList, and Vector.
+* Set: The Set interface, also an extension of the Collection interface, represents a collection that does not allow duplicate elements.Notable implementations of Set are HashSet, TreeSet, and LinkedHashSet.
+* Queue: It extends collection interface and defines behaviour of queue, that is first-in, first-out.  Notable implementations of Queue include LinkedList and PriorityQueue.
+* Deque: The Deque interface extends the Queue interface and represents a double-ended queue, allowing elements to be inserted and removed from both ends.Common implementations of Deque include ArrayDeque and LinkedList.
+* Map: The Map interface represents a mapping between unique keys and corresponding values. It does not extend the Collection interface but is an important part of the Java Collection framework.Notable implementations of Map include HashMap, TreeMap, and LinkedHashMap.
+
+
+
+
+Q5.Differentiate between List and Set in Java.
+→  List:
+* The List is an indexed sequence.
+*  List allows duplicate elements.
+* Elements by their position can be accessed.
+* Multiple null elements can be stored.
+* List implementations are ArrayList, LinkedList, Vector, Stack.
+
+
+    Set:
+* The Set is an non-indexed sequence.
+* Set doesn’t allow duplicate elements.
+* Position access to elements is not allowed.
+* Null element can store only once.
+* Set implementations are HashSet, LinkedHashSet.
+
+
+
+
+Q6.What is the Differentiate between Iterator and ListIterator in Java.
+→ Iterator:
+* It helps traverse through a map, list and a set.
+* Index can’t be obtained with the help of an iterator.
+* The iterator can’t modify or replace elements of a Collection.
+* It traverses through elements present in Collection.
+* This iteration can be done in the forward direction only.
+* Elements can’t be added, since it would throw ConcurrentModificationException.
+* Methods of the iterator are ‘next()’, ‘remove()’, ‘hasNext()’.
+
+
+ ListIterator:
+* It helps traverse through a list only.
+* It can’t traverse through a map and a set.
+* It can traverse through the elements present in Collection.
+* The traversal can be done in both forward and backward directions.
+* Some of the methods of listiterator are ‘nextIndex()’, ‘previousIndex()’, ‘previous()’, ‘next()’.
+* The elements can be modified or replaced.
+* Elements can be added to a collection anytime.
+
+
+
+
+Q7.What is the Differentiate between Comparable and Comparator?
+→ Comparable:
+* Comparable is an interface in Java.
+* Comparable provides compareTo() method to sort objects.
+* Comparable is a part of the Java.lang package.
+* Comparable can be used for natural or default ordering.
+* Comparable provides a single sorting sequence. Ex: Sort either by id or name
+* Comparable modifies the class that implements it.
+ 
+ Comparator:
+* Comparator is a functional interface in Java.
+* Comparator provides compare() method to sort objects.
+* Comparator is a part of the java.util package.
+* Comparator can be used for custom ordering.
+* Comparator provides multiple sorting sequences. Ex. Sort by both id and name.
+* Comparator doesn't modify any class.
+
+
+
+
+Q8.What is collision in HashMap?
+→ A collision, or more specifically, a hash code collision in a HashMap, is a situation where two or more key objects produce the same final hash value and hence point to the same bucket location or array index.
+
+
+
+
+Q9.Distinguish between a hashmap and a Treemap.
+→ Hashmap:
+* A HashMap is a Map based collection class that is used for storing key and value pairs which do not maintain a specific order in data elements.        
+* The HashMap does not maintain the order.
+* The HashMap can contain one null key.
+* HashMap is faster than TreeMap.
+
+
+Treemap:
+* A TreeMap is a Map based collection class that is used for storing key and value pairs which maintains the ascending order of data elements.
+* The TreeMap maintains the ascending order.
+* The TreeMap cannot have a null key.
+* TreeMap is slower than HashMap.
+
+
+
+
+Q10.Define LinkedHashMap in Java.
+→ LinkedHashMap in Java is an implementation that combines HashTable and LinkedList implementation. It implements the Map interface. The key-value pairs of LinkedHashMap have a predictable order of iteration.
+
+
+  Some of the main characteristics of LinkedHashMap are:
+* It contains key-based values.
+* Maintains the order of the insertion of key-value pairs.
+* It does not allow duplicates, it has unique elements.
+* It can have a single null key. But it allows multiple null values.

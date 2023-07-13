@@ -1,0 +1,158 @@
+﻿Q1.What is Exception in Java?
+→ Exception is an unwanted or unexpected event, which occurs during the execution of a program, i.e. at run time, that disrupts the normal flow of the program’s instructions. 
+Exceptions are of two types:
+* Checked exceptions.
+* Unchecked exceptions.
+
+
+
+
+Q2.What is Exception Handling?
+→ Exception Handling is the technique of handling unexpected failures that could occur in a program so that the program does not terminate and normal execution flow is maintained. 
+Consider an example program where we have 6 statement blocks as shown in the below image. Statements 1 and 2 execute successfully. While executing the statement 3 block, an unexpected error occurred. Now the Java program checks if there is any exception-handling mechanism present. If an exception handling block is present, then the exception is handled gracefully and the program continues with the execution of the statement 4 block. If not, the program gets terminated.
+
+
+
+
+Q3.What is the difference between Checked and Unchecked Exceptions and Error?
+→ 1) Checked Exception
+* The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions. 
+* Checked exceptions are checked at compile-time.
+* Example: IOException, SQLException etc.
+  2) Unchecked Exception
+* The classes that extend RuntimeException are known as unchecked exceptions. 
+* Unchecked exceptions are not checked at compile-time.
+* Example: ArithmeticException, NullPointerException etc.
+
+
+
+
+
+
+Q4.What are the difference between throw and throws in Java?
+→ 1) Throw:
+*  Throw is used to explicitly throw an exception.
+* Checked exceptions can not be propagated with throw only.
+* Throw is followed by an instance.
+* Throw is used within the method.
+* You cannot throw multiple exception
+  2) Throws:
+* Throws is used to declare an exception.
+* Checked exception can be propagated with throws.
+* Throws is followed by class.
+* Throws is used with the method signature.
+* You can declare multiple exception.
+* e.g. public void method()throws IOException,SQLException
+
+
+
+
+Q5.What is multithreading in Java? mention its advantages
+→ Multithreading in Java is a process of executing two or more parts of a program to run simultaneously.
+* Each part of such a program is called a thread. So, threads are light-weight processes within a process.
+* Multithreaded applications execute two or more threads run concurrently. Hence, it is also known as Concurrency in Java.
+* Each thread runs parallel to each other. Multiple threads don’t allocate separate memory areas, hence they save memory.
+
+
+Advantages of multithreading:
+1. The users are not blocked because threads are independent, and we can perform multiple operations at times
+2. Threads are independent, so it doesn’t affect other threads if an exception occurs in a single thread.
+3. You can perform many operations together, so it saves time.
+
+
+
+
+Q6.Write a program to create and call a custom exception
+→ class InvalidAgeException  extends Exception  {  
+    public InvalidAgeException (String str)  
+    {  
+        super(str);  
+    }  
+}  
+    
+class TestCustomException1  {  
+    static void validate (int age) throws InvalidAgeException{    
+       if(age < 18){   
+        throw new InvalidAgeException("age is not valid to vote");    
+    }  
+       else {   
+        System.out.println("welcome to vote");   
+        }   
+     }    
+  
+    public static void main(String args[]) {  
+        try  
+        {  
+            validate(13);  
+        }  
+        catch (InvalidAgeException ex)  
+        {  
+            System.out.println("Caught the exception");  
+    
+            System.out.println("Exception occured: " + ex);  
+        }  
+  
+        System.out.println("rest of the code...");    
+    }  
+}  
+
+
+Output:
+Caught the exception
+Exception occured: Assignments.InvalidAgeException: age is not valid to vote
+rest of the code…
+
+
+
+
+Q7.How can you handle exceptions in Java? 
+→ There are five keywords used to handle exceptions in Java: 
+
+
+1. try
+2. catch
+3. finally
+4. throw
+5. throws
+
+
+* Try block
+The try block contains set of statements where an exception can occur. A try block is always followed by a catch block, which handles the exception that occurs in associated try block. A try block must be followed by catch blocks or finally block or both.
+
+
+* Catch block
+A catch block is where you handle the exceptions, this block must follow the try block. A single try block can have several catch blocks associated with it. You can catch different exceptions in different catch blocks. When an exception occurs in try block, the corresponding catch block that handles that particular exception executes. 
+
+
+* Finally block
+You can attach a finally-clause to a try-catch block.
+The code inside the finally clause will always be executed, even if an exception is thrown from within the try or catch block.
+If your code has a return statement inside the try or catch block, the code inside the finally-block will get executed before returning from the method.
+
+
+
+
+Q8.What is Thread in Java?
+→  1) A thread in Java is the direction or path that is taken while a program is being executed. 
+    2) Generally, all the programs have at least one thread, known as the main thread, that is provided   by  the JVM or Java Virtual Machine at the starting of the program’s execution. 
+   3) At this point, when the main thread is provided, the main() method is invoked by the main thread.
+   4) A thread is an execution thread in a program. 
+  5) Multiple threads of execution can be run concurrently by an application running on the Java Virtual Machine. 
+ 6) The priority of each thread varies. Higher priority threads are executed before lower priority threads.
+
+
+
+
+Q9. What are the two ways of implementing thread in Java?
+→ Two ways of implementing thread in java are:
+*  By implementing runnable interface.
+*  By extending the thread.
+
+
+
+
+Q10.What do you mean by garbage collection?
+* → Garbage collection (GC) is a dynamic approach to automatic memory management and heap allocation that processes and identifies dead memory blocks and reallocates storage for reuse.
+* The primary purpose of garbage collection is to reduce memory leaks.
+* Sometimes some objects are no longer requirde by the program and when there is no reference to an object,then that object should be released.
+* This process is known as garbage collection.
