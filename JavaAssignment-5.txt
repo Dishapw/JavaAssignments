@@ -5,13 +5,9 @@ Exceptions are of two types:
 * Unchecked exceptions.
 
 
-
-
 Q2.What is Exception Handling?
 → Exception Handling is the technique of handling unexpected failures that could occur in a program so that the program does not terminate and normal execution flow is maintained. 
 Consider an example program where we have 6 statement blocks as shown in the below image. Statements 1 and 2 execute successfully. While executing the statement 3 block, an unexpected error occurred. Now the Java program checks if there is any exception-handling mechanism present. If an exception handling block is present, then the exception is handled gracefully and the program continues with the execution of the statement 4 block. If not, the program gets terminated.
-
-
 
 
 Q3.What is the difference between Checked and Unchecked Exceptions and Error?
@@ -23,10 +19,6 @@ Q3.What is the difference between Checked and Unchecked Exceptions and Error?
 * The classes that extend RuntimeException are known as unchecked exceptions. 
 * Unchecked exceptions are not checked at compile-time.
 * Example: ArithmeticException, NullPointerException etc.
-
-
-
-
 
 
 Q4.What are the difference between throw and throws in Java?
@@ -45,21 +37,16 @@ Q4.What are the difference between throw and throws in Java?
 * e.g. public void method()throws IOException,SQLException
 
 
-
-
 Q5.What is multithreading in Java? mention its advantages
 → Multithreading in Java is a process of executing two or more parts of a program to run simultaneously.
 * Each part of such a program is called a thread. So, threads are light-weight processes within a process.
 * Multithreaded applications execute two or more threads run concurrently. Hence, it is also known as Concurrency in Java.
 * Each thread runs parallel to each other. Multiple threads don’t allocate separate memory areas, hence they save memory.
 
-
 Advantages of multithreading:
 1. The users are not blocked because threads are independent, and we can perform multiple operations at times
 2. Threads are independent, so it doesn’t affect other threads if an exception occurs in a single thread.
 3. You can perform many operations together, so it saves time.
-
-
 
 
 Q6.Write a program to create and call a custom exception
@@ -96,40 +83,30 @@ class TestCustomException1  {
     }  
 }  
 
-
 Output:
 Caught the exception
 Exception occured: Assignments.InvalidAgeException: age is not valid to vote
 rest of the code…
 
 
-
-
 Q7.How can you handle exceptions in Java? 
 → There are five keywords used to handle exceptions in Java: 
-
-
 1. try
 2. catch
 3. finally
 4. throw
 5. throws
 
-
 * Try block
 The try block contains set of statements where an exception can occur. A try block is always followed by a catch block, which handles the exception that occurs in associated try block. A try block must be followed by catch blocks or finally block or both.
 
-
 * Catch block
 A catch block is where you handle the exceptions, this block must follow the try block. A single try block can have several catch blocks associated with it. You can catch different exceptions in different catch blocks. When an exception occurs in try block, the corresponding catch block that handles that particular exception executes. 
-
 
 * Finally block
 You can attach a finally-clause to a try-catch block.
 The code inside the finally clause will always be executed, even if an exception is thrown from within the try or catch block.
 If your code has a return statement inside the try or catch block, the code inside the finally-block will get executed before returning from the method.
-
-
 
 
 Q8.What is Thread in Java?
@@ -141,14 +118,10 @@ Q8.What is Thread in Java?
  6) The priority of each thread varies. Higher priority threads are executed before lower priority threads.
 
 
-
-
 Q9. What are the two ways of implementing thread in Java?
 → Two ways of implementing thread in java are:
 *  By implementing runnable interface.
 *  By extending the thread.
-
-
 
 
 Q10.What do you mean by garbage collection?
