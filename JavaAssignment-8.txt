@@ -2,43 +2,25 @@
 → ORM stands for Object-Relational Mapping (ORM) is a programming technique for converting data between relational databases and object oriented programming languages such as Java, C#, etc.
 
 
-
-
 Q2.What are the advantages of Hibernate over JDBC?
 → The advantages of Hibernate over JDBC are:
-
-
 1. Hibernate code will work well for all databases, for ex: Oracle,MySQL, etc. where as JDBC is database specific.
-
-
 2. No knowledge of SQL is needed because Hibernate is a set of objects and a table is treated as an object, whereas to work with JDBC, one need to know SQL.
-
-
 3. Query tuning is not required in Hibernate. The query tuning is automatic in hibernate by using criteria queries, and the result of performance is at its best. Whereas in JDBC the query tuning is to be done by the database authors.
-
-
 4. With the support of the cache of hibernate, the data can be placed in the cache for better performance. Whereas in JDBC the java cache is to be implemented.
-
-
 
 
 Q3.What are some of the important interfaces of Hibernate framework?
 → Some important interfaces of Hibernate framework are:-
 1. Session Interface : The basic interface for all hibernate applications. The instances are light weighted and can be created and destroyed without expensive process.
 
-
 2. SessionFactory interface : The delivery of session objects to hibernate applications is done by this interface. 
-
 
 3. Configuration Interface : Hibernate bootstrap action is configured by this interface.
 
-
 4. Transaction Interface : This is an optional interface. This interface is used to abstract the code from a transaction that is implemented such as a JDBC / JTA transaction.
 
-
 5. Query and Criteria interface : The queries from the user are allowed by this interface apart from controlling the flow of the query execution.
-
-
 
 
 Q4.What is a Session in Hibernate?
@@ -48,21 +30,15 @@ The Session object created is lightweight and designed to be instantiated each t
 This Session provides methods to create, read, update, and delete operations for a constant object.
 
 
-
-
 Q5.What is a SessionFactory?
 → SessionFactory is a factory of session objects that keeps all DB-related property details that are pulled from either hibernate.cfg.xml or hibernate.properties files. 
 SessionFactory is a heavyweight and threadsafe object that is created when the application starts. As the SessionFactory object is threadsafe it can be used by multiple threads in an application.
 SessionFactory implementation is created per database in an application. If there is multiple databases in a table then we have a SessionFactory for each database.
 
 
-
-
 Q6.What is HQL?
 → HQL stands for Hibernate Query Language, is an object-oriented query language. It works with persistent objects and their properties whereas SQL works with tables and columns.
 HQL queries are translated by Hibernate into conventional SQL queries, which in turns perform action on the database.
-
-
 
 
 Q7.What are Many to Many associations?
@@ -72,13 +48,9 @@ Q7.What are Many to Many associations?
 * For example, A ShoppingCart can have multiple items and A item can belong to multiple shopping cart.
 
 
-
-
 Q8.What is hibernate caching?
 → Caching is a mechanism to enhance the performance of a system by pooling the object in the cache.
 Cache is a buffer memory that resides between the application and the database. It stores recently used data to reduce the number of database hits.
-
-
 
 
 Q9.What is the difference between first level cache and second level cache?
@@ -88,14 +60,11 @@ Q9.What is the difference between first level cache and second level cache?
 * It is enabled by default.
 * It is available only within a session.
 
-
   Second-level cache:-
 * Second level cache is a session factory-level cache.
 * It is always associates with the Session Factory object.
 * It is not enabled by default.
 * It is available across all session.
-
-
 
 
 Q10.What can you tell about  Hibernate Configuration File?
