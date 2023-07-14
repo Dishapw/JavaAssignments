@@ -1,0 +1,143 @@
+﻿Q1.What is the use of JDBC in java?
+→ JDBC is an API used in java that helps a programmer to write a Java program to connect to a database, retrieve the data from the database, and perform various operations on the data in a Java program.
+
+
+
+
+Q2.What are the steps involved in JDBC?
+→ Steps involved in JDBC are as follows:
+1. Registering the driver class
+2. Creating connection
+3. Creating statement
+4. Executing queries
+5. Closing connection
+
+
+
+
+Q3.What are the types of statement in JDBC in java?
+→ There are 3 types of statements in JDBC in java are:
+1. Create Statement
+2. Prepared Statement
+3. Callable Statement
+
+
+Create Statement: Used for general purpose access to the database and executes a static SQL query at runtime.
+
+
+Prepared Statement: Used to provide input parameters to the query during execution.
+
+
+Callable Statement: Used to access the database stored procedures and helps in accepting runtime parameters.
+
+
+
+
+Q4.What is Servlet in Java?
+→ A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.
+The javax.servlet and javax.servlet.http packages provide interfaces and classes for writing servlets.
+
+
+
+
+Q5.Explain the life Cycle of servlet?
+→   
+                                            Life cycle of servlet.
+
+
+1. Load Servlet Class: Web container loads the servlet when the first request is received. This step is executed only once at the time of first request.
+
+
+2. Create Servlet instance: After loading the servlet class web container creates the servlet instance. Only one instance is created for a servlet and all concurrent requests are executed on the same servlet instance.
+
+
+3. Call init() method: After creating the servlet instance web container calls the servlet’s init method. This method is used to initialize the servlet before processing first request. It is called only once by the web container.
+
+
+4. Call service() method: After initialization process web container calls service method. Service method is called for every request. For every request servlet creates a separate thread.
+
+
+5.Call destoy() method: This method is called by web container before removing the servlet instance.
+
+
+
+
+Q6.Explain the difference between the RequestDispatcher.forward() and HttpServletResponse.sendRedirect() methods?
+→  RequestDispatcher.forward():-
+* This method sends the same request to another resource.
+* Works at server side.
+* Works within the server only.
+* Faster than sendRedirect() method.
+* It is declared in RequestDispatcher interface.
+ 
+     HttpServletResponse.sendRedirect():-
+* This method sends new request always because it uses the URL bar of the browser.
+* Works at client side.
+* Works within and outside the server.
+* SendRedirect() method is slower.
+* It is  declared in HttpServletResponse.
+
+
+
+
+Q7.What is the purpose of the doGet() and doPost() methods in a servlet?
+→ doGet() Method:-
+* The doGet method is called by the server (via the service method) when the client requests a GET request. 
+* It is used to retrieve information from the server.
+
+
+    doPost() Method:-
+* The doPost method is called by the server (via the service method) when the client requests a POST request. 
+* It is used to send information to the server.
+
+
+
+
+Q8.Explain the JSP Model-View-Controller (MVC) architecture.
+→  JspModel-View-Controller(MVC) architecture as follow:
+  
+
+
+
+
+
+1.Model Layer:
+1. Model Layer is the data layer.
+2. It consists of all the data of our web application.
+3. It represents a state of an application.
+4. The Model Layer is responsible to connect with the database as well as stores the data into a database.
+5. It consists of all the classes in our application which have the connection to the database.
+
+
+2. View Layer:
+1. It represents the presentation layer
+2. It normally represents the User Interface (UI) of the application.
+3. We can use HTML,CSS,JS etc to create presentation layer.
+
+
+3. Controller Layer:
+1. It is an interface between the view layer and the model layer.
+2. It receives the request from View Layer.
+3. It read the data which is coming from the presentation layer.
+4. To read data from the presentation layer, we can use Servlet, JSP, Filter, etc.
+
+
+
+
+Q9.What are some of the advantages of Servlets?
+→ Advantages of Servlets are:-
+
+
+1. Portability: Servlets are platform independent and can run on any operating system that supports Java.
+2. Performance: Servlets are known for their fast performance, especially in comparison to traditional CGI.
+3. Scalability: Servlets are designed to handle multiple requests simultaneously, making them suitable for large scale applications.
+4. Integration: Servlets can be integrated easily with other Java technologies, such as JavaServer Pages (JSP) or JavaServer Faces (JSF).
+
+
+
+
+Q10.What are the limitations of JSP?
+→ Limitations of JSP:-
+1. As the JSP is compiled on the server, it is not memory and time-efficient.
+2. It is hard to track errors in JSP files because they are an extension to Servlets. The JSP codes are processed into Servlet codes for compilation.
+3. As JSP is an HTML file, it doesn’t provide many features.
