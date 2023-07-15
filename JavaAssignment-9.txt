@@ -1,0 +1,103 @@
+﻿Q1.What is Spring Framework?
+→ The Spring Framework is an open-source application framework that provides infrastructure support for developing Java applications. 
+
+
+
+
+Q2.What are the features of Spring Framework?
+→ Following are some of the major features of Spring Framework :
+
+
+1. Lightweight: there is a slight overhead of using the framework in development
+2. Inversion of Control (IoC): Spring container takes care of wiring dependencies of various objects, instead of creating or looking for dependent objects
+3. Aspect Oriented Programming (AOP): Spring supports AOP to separate business logic from system services
+4. IoC container: it manages Spring Bean life cycle and project specific configurations
+5. MVC framework: that is used to create web applications or RESTful web services, capable of returning XML/JSON responses
+6. Transaction management: reduces the amount of boiler-plate code in JDBC operations, file uploading, etc., either by using Java annotations or by Spring Bean XML configuration file
+7. Exception Handling: Spring provides a convenient API for translating technology-specific exceptions into unchecked exceptions
+
+
+
+
+
+
+Q3.What is a Spring configuration file?
+→ Spring configuration file is an XML file. 
+This file contains the classes information and describes how these classes are configured and introduced to each other.
+
+
+
+
+Q4.What do you mean by IoC Container?
+→ IoC container is a framework for implementing automated dependency injection. 
+   It contains object creation for the longer ways to use and injects dependencies within the class. 
+
+
+
+
+Q5.What do you understand by Dependency Injection?
+→ Dependency Injection is one of the important functionalities of Spring IoC (Inversion of Control) and is responsible for injecting dependencies through different processes, either the Constructor or Setter method. Dependency Injection also ensures loose coupling between the classes.
+
+
+
+
+Q6.Explain the difference between constructor and setter injection?
+→  Constructor injection:-
+1.  No Partial Injection.
+2. Doesn’t override the setter property.
+3. Creates a new instance if any modification occurs.
+4.  Better for too many properties.
+
+
+Setter injection:-
+1. Partial Injection.
+2. Overrides the constructor property if both are defined.
+3. Doesn’t create a new instance if you change the property value.
+4.  Better for a few properties.
+
+
+
+
+Q7.What are Spring Beans?
+→ Spring Bean is a crucial concept of the Spring Framework. Objects that form the base of any application and those managed by the Spring IoC container are called beans.
+
+
+
+
+Q8.What are the bean scopes available in Spring?
+→ There are five types of spring bean scopes:
+
+
+1. singleton - only one instance of the spring bean will be created for the spring container. This is the default spring bean scope. While using this scope, make sure bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
+2. prototype – A new instance will be created every time the bean is requested from the spring container.
+3. request – This is same as prototype scope, however it’s meant to be used for web applications. A new instance of the bean will be created for each HTTP request.
+4. session – A new bean will be created for each HTTP session by the container.
+5. global-session – This is used to create global session beans for Portlet applications.
+
+
+
+
+Q9.What is Autowiring and name the different modes of it?
+→ Autowiring is a crucial feature in the Spring framework, which uses setter or constructor injection and allows the user to inject the object dependency implicitly.
+four types of auto wiring –
+1. autowire byName
+2. autowire byType
+3. autowire by constructor
+4. autowiring by @Autowired and @Qualifier annotations
+
+
+
+
+Q10.Explain Bean life cycle in Spring Bean Factory Container.
+→ Bean life cycle in Spring Bean Factory Container is as follows:
+1. The Spring container instantiates the bean from the bean’s definition in the XML file.
+2. Spring populates all of the properties using the dependency injection, as specified in the bean definition.
+3. The factory calls setBeanBeanNameAware interface.Name() by passing the bean’s ID if the bean implements the 
+4. The factory calls setBeanFactory() by passing an instance of itself if the bean implements the BeanFactoryAware interface.
+5. preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.
+6. If an init-method is specified for the bean, then it will be called.
+7. Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.
+
+
+Below is the bean lifecycle flow:
+Container started → bean instantiated → dependencies injected → custom int() method → custom utility method → custom destroy() method
