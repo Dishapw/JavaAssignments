@@ -2,12 +2,8 @@
 → The Spring Framework is an open-source application framework that provides infrastructure support for developing Java applications. 
 
 
-
-
 Q2.What are the features of Spring Framework?
 → Following are some of the major features of Spring Framework :
-
-
 1. Lightweight: there is a slight overhead of using the framework in development
 2. Inversion of Control (IoC): Spring container takes care of wiring dependencies of various objects, instead of creating or looking for dependent objects
 3. Aspect Oriented Programming (AOP): Spring supports AOP to separate business logic from system services
@@ -17,15 +13,9 @@ Q2.What are the features of Spring Framework?
 7. Exception Handling: Spring provides a convenient API for translating technology-specific exceptions into unchecked exceptions
 
 
-
-
-
-
 Q3.What is a Spring configuration file?
 → Spring configuration file is an XML file. 
 This file contains the classes information and describes how these classes are configured and introduced to each other.
-
-
 
 
 Q4.What do you mean by IoC Container?
@@ -33,12 +23,8 @@ Q4.What do you mean by IoC Container?
    It contains object creation for the longer ways to use and injects dependencies within the class. 
 
 
-
-
 Q5.What do you understand by Dependency Injection?
 → Dependency Injection is one of the important functionalities of Spring IoC (Inversion of Control) and is responsible for injecting dependencies through different processes, either the Constructor or Setter method. Dependency Injection also ensures loose coupling between the classes.
-
-
 
 
 Q6.Explain the difference between constructor and setter injection?
@@ -48,7 +34,6 @@ Q6.Explain the difference between constructor and setter injection?
 3. Creates a new instance if any modification occurs.
 4.  Better for too many properties.
 
-
 Setter injection:-
 1. Partial Injection.
 2. Overrides the constructor property if both are defined.
@@ -56,25 +41,17 @@ Setter injection:-
 4.  Better for a few properties.
 
 
-
-
 Q7.What are Spring Beans?
 → Spring Bean is a crucial concept of the Spring Framework. Objects that form the base of any application and those managed by the Spring IoC container are called beans.
 
 
-
-
 Q8.What are the bean scopes available in Spring?
 → There are five types of spring bean scopes:
-
-
 1. singleton - only one instance of the spring bean will be created for the spring container. This is the default spring bean scope. While using this scope, make sure bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
 2. prototype – A new instance will be created every time the bean is requested from the spring container.
 3. request – This is same as prototype scope, however it’s meant to be used for web applications. A new instance of the bean will be created for each HTTP request.
 4. session – A new bean will be created for each HTTP session by the container.
 5. global-session – This is used to create global session beans for Portlet applications.
-
-
 
 
 Q9.What is Autowiring and name the different modes of it?
@@ -86,8 +63,6 @@ four types of auto wiring –
 4. autowiring by @Autowired and @Qualifier annotations
 
 
-
-
 Q10.Explain Bean life cycle in Spring Bean Factory Container.
 → Bean life cycle in Spring Bean Factory Container is as follows:
 1. The Spring container instantiates the bean from the bean’s definition in the XML file.
@@ -97,7 +72,6 @@ Q10.Explain Bean life cycle in Spring Bean Factory Container.
 5. preProcessBeforeInitialization() methods are called if there are any BeanPostProcessors associated with the bean.
 6. If an init-method is specified for the bean, then it will be called.
 7. Finally, postProcessAfterInitialization() methods will be called if there are any BeanPostProcessors associated with the bean.
-
 
 Below is the bean lifecycle flow:
 Container started → bean instantiated → dependencies injected → custom int() method → custom utility method → custom destroy() method
