@@ -2,8 +2,6 @@
 → Spring MVC is a Java framework used to build Java Web Applications. It implements all the basic features of the MVC(Model View Controller) architecture and provides a loose coupling between the application’s Model, View and Controller. This framework also supplies an inbuilt view resolver for selecting views.
 
 
-
-
 Q2.What are the benefits of Spring MVC framework over other MVC frameworks?
 → The benefits of the Spring MVC framework over other MVC frameworks are listed below:
 1. In Spring MVC, there is a specialised object for every role. Thus it provides a clear separation of roles.
@@ -13,8 +11,6 @@ Q2.What are the benefits of Spring MVC framework over other MVC frameworks?
 5. Customisable locale and theme resolution
 
 
-
-
 Q3.What is DispatcherServlet in Spring MVC? In other words, can you explain the Spring MVC architecture?
 → The DispatcherServlet is the core of Spring Web MVC framework. It handles all the HTTP requests and responses. 
 The DispatcherServlet receives the entry of handler mapping from the configuration file and forwards the request to the controller. 
@@ -22,12 +18,8 @@ The controller then returns an object of Model And View.
 The DispatcherServlet checks the entry of view resolver in the configuration file and calls the specified view component.
 
 
-
-
 Q4.What is a View Resolver pattern and explain its significance in Spring MVC?
 → View Resolver pattern is a J2EE pattern that enables a web application to dynamically select its view technology. For example, HTML, JSP, Tapestry, JSF, XSLT etc. In this pattern, View resolver holds mapping of different views, controller return name of the view, which is then delegated to the View Resolver for selecting an appropriate view. Spring MVC framework supplies inbuilt view resolver for selecting views.
-
-
 
 
 Q5.What are the differences between @RequestParam and @PathVariable annotations?
@@ -36,36 +28,25 @@ Q5.What are the differences between @RequestParam and @PathVariable annotations?
 1. used to extract query parameters from the request URL.
 2. For example, in the URL "/users?id=1", the id parameter can be extracted using @RequestParam.
 
-
 @PathVariable:-
 1. used to extract path variables from the URL.
 2. For example,in the URL "/users/1", the "1" can be extracted using @PathVariable.
-
-
 
 
 Q6.What is the Model in Spring MVC?
 → In Spring MVC, the Model is a reference to have the data for rendering. It works as a container that contains the data of the application. The data can be in any form like strings, objects, information from the database etc. The model is always created and passed to the view in Spring MVC.
 
 
-
-
 Q7.What is the role of @ModelAttribute annotation?
 → @ModelAttribute is an annotation that binds a method parameter or method return value to a named model attribute, and then exposes it to a web view.
-
-
 
 
 Q8.What is the significance of @Repository annotation?
 → @Repository Annotation is a specialization of @Component annotation which is used to indicate that the class provides the mechanism for storage, retrieval, update, delete and search operation on objects.
 
 
-
-
 Q9.What does REST stand for? and what is RESTful web services?
 → REST stands for Representational State Transfer. RESTful web services are used to create Application Programming interfaces or APIs where clients and servers use a standard protocol and interface for the exchange of resources. HTTP is the protocol used for REST.
-
-
 
 
 Q10.What is differences between RESTful web services and SOAP web services?
